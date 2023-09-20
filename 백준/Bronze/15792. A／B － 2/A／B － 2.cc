@@ -1,18 +1,20 @@
-#include<iostream>
-#include<stdio.h>
+#include  <iostream>
+
 using namespace std;
 
 
 int main()
 {
-	int A, B;
-	cin >> A >> B;
-	cout << int(A / B)<< ".";
-	A = A % B;
-	for (int i = 0; i <= 1000; i++)
-	{
-		A *= 10;
-		cout << A/ B;
-		A = A - (A / B)*B;
-	}
+    int a,b;
+    cin>>a>>b;
+    cout<<a/b<<".";
+    a=a%b;
+
+    for(int i=0;i<=1000;i++)
+    {
+        a*=10;
+        cout<<a/b;
+        a=a-(a/b)*b;
+    }
 }
+
